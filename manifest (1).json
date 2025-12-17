@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "1231231",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "1231231",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "id": "ai-game-pwa",
+  "description": "AI 힌트를 제공하는 숫자 맞추기 게임 PWA"
+}
