@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 숫자 맞추기 게임</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f5f5;
+      padding-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🤖 AI 숫자 맞추기 게임</h1>
+  <p>1부터 100 사이의 숫자를 맞혀보세요!</p>
+
+  <input type="number" id="userInput" placeholder="숫자 입력">
+  <button onclick="check()">확인</button>
+
+  <div id="result"></div>
+
+  <script>
+    const answer = Math.floor(Math.random() * 100) + 1;
+
+    function check() {
+      const user = document.getElementById("userInput").value;
+      const result = document.getElementById("result");
+
+      if (user == answer) {
+        result.innerHTML = "🎉 정답입니다! AI 승복!";
+      } else if (user < answer) {
+        result.innerHTML = "⬆️ UP! 더 큰 수입니다.";
+      } else {
+        result.innerHTML = "⬇️ DOWN! 더 작은 수입니다.";
+      }
+    }
+  </script>
+
+</body>
+</html>
